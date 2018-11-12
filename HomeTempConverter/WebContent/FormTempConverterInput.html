@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Temperature Converter</title>
+<meta name="author" content="Tesowy Jan">
+<meta name="keywords" content="JavaEE, ATJ, HTML">
+<meta name="description" content="Form to convert temperature">
+<meta charset="utf-8">
+<style>
+table, td {
+	border: 1px solid black;
+	width: 95%;
+	height: 95%
+}
+
+td {
+	width: 33.33%;
+	height: 33.33%
+}
+
+#area1 {
+	height: 20%
+}
+
+.size {
+	width: 80px;
+	height: 30px
+}
+
+.m {
+	vertical-align: middle
+}
+
+.c {
+	text-align: center
+}
+
+.general {
+	text-align: center;
+	background-color: lightblue
+}
+</style>
+</head>
+<body>
+	<section>
+		<h1>Temperature converter</h1>
+		<fieldset id="area1">
+			<legend>Input value to convert:</legend>
+			<form action="MyCustomConvert" method="get">
+				<table class="general">
+					<tr class="c m">
+						<td><input type="number" name="inputValue" class="size"
+							placeholder="Input temperature to convert" min="-273" max="9999"
+							value="10" step="1" required></td>
+						<td><select class="size" name="convertDirection">
+								<option value="1">To Fahrenheit</option>
+								<option value="2">To Celsius</option>
+						</select> <input type="submit" value="Convert" class="size"></td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+	</section>
+</body>
+</html>
