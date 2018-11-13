@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Equation generator test5</title>
+<title>Equation generator test6</title>
 </head>
 <body>
 	<%@ page import="java.util.Random"%>
